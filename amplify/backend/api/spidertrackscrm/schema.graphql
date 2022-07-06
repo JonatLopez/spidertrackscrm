@@ -1,0 +1,24 @@
+type UserType @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Type: String
+}
+
+type Oportunity @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Type: String
+}
+
+type Status @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Type: String
+}
+
+type User @model @auth(rules: [{allow: public, operations: [create, read, update]}]) {
+  id: ID!
+  Name: String
+  CreationDate: AWSDateTime
+  Email: AWSEmail
+  StatusId: Status @hasOne
+  Oportunity: Oportunity @hasOne
+  UserType: UserType @hasOne
+}

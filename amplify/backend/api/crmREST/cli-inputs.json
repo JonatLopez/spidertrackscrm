@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/crm": {
+      "name": "/crm",
+      "lambdaFunction": "crmLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

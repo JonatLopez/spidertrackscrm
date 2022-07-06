@@ -1,0 +1,13 @@
+{
+  "resourceName": "s3spidertrackscrmstorage4831f3f6",
+  "bucketName": "spidertrackscrm-storage-4831f3f6",
+  "policyUUID": "abf4b17d",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "READ",
+    "CREATE_AND_UPDATE"
+  ]
+}
